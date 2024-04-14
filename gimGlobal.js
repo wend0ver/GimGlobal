@@ -16,13 +16,15 @@
 // Put your settings here:
 var serverURL = ""
 
+
+
 function main() {
   var newServer = null;
   var newClient = null;
   storeData('clientMessage', null)
   storeData('serverMessage', null)
 
-  console.log('Script loaded');
+  console.log('GimGlobal loaded');
 
   // send message
   function sendMessage(message) {
@@ -73,6 +75,11 @@ function main() {
   // send data to client
   console.sendDataToClient = function(message) {
     storeData('clientMessage', message)
+  };
+
+  // request server
+  console.requestDataFromServer = function(message) {
+    storeData('serverMessage', `fetch("https://${serverURL}/api", { method: "GET", headers: { "data": "${message}" } }).then(response => { if (response.ok) { return response.text(); } else { throw new Error(\`HTTP error! status: \${response.status}\`); } }).then(data => console.sendDataToClient(data)).catch(error => console.error("Error:", error));`);
   };
 
 }
