@@ -10,5 +10,7 @@ Install [tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhd
 
 Then click this link to install the userscript [install](https://github.com/wend0ver/GimGlobal/raw/main/gimGlobal.user.js)
 
+! YOU NEED THE SERVER WEBSITE OPEN FOR THIS TO WORK (or if you are running the server that is also fine) !
+
 ![1](https://raw.githubusercontent.com/wend0ver/GimGlobal/main/getURL.png)
 ![2](https://raw.githubusercontent.com/wend0ver/GimGlobal/main/pasteURL.png)
