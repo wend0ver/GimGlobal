@@ -6,7 +6,7 @@
 // @iconURL     https://www.gimkit.com/favicon.png
 // @author      wendover
 // @updateURL
-// @downloadURL
+// @downloadURL https://raw.githubusercontent.com/wend0ver/GimGlobal/main/gimGlobal.js
 // @version     0.2.4
 // @grant       GM_getValue
 // @grant       GM_setValue
